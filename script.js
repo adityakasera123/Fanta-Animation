@@ -1,3 +1,5 @@
+
+gsap.registerPlugin(ScrollTrigger);
 let tl=gsap.timeline({scrollTrigger:{
     trigger:".two",
     start:"5% 95%",
@@ -31,14 +33,14 @@ tl.to("#leaf",{
 tl.to("#leaf1",{
  rotate:"400deg",
     top:"102%",
-    left:"80%"
+    left:"74%"
 },'orange')
 
 
 let tl2=gsap.timeline({scrollTrigger:{
     trigger:".three",
     start:"0% 85%",
-    end:"50% 50%",
+    end:"70% 50%",
     scrub:true,
     markers:true
 }})
@@ -53,3 +55,10 @@ tl2.to("#orange-cut",{
     top:"205%",
     left:"41%"
 },'orange1')
+
+
+tl2.from("#pepsi",{
+    rotate:"90deg",
+    top:"110%",
+    left:"100%"
+})

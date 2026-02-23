@@ -4,7 +4,7 @@ let tl=gsap.timeline({scrollTrigger:{
     trigger:".two",
     start:"5% 95%",
     end:"67% 60%",
-    scrub:"true",
+    scrub:1,
    
 }})
 
@@ -41,7 +41,7 @@ let tl2=gsap.timeline({scrollTrigger:{
     trigger:".three",
     start:"0% 85%",
     end:"70% 50%",
-    scrub:true,
+    scrub:.6,
     markers:true
 }})
 
@@ -58,7 +58,18 @@ tl2.to("#orange-cut",{
 
 
 tl2.from("#pepsi",{
-    rotate:"90deg",
-    top:"110%",
-    left:"100%"
-})
+    x: 140,
+    rotation: 75,
+    transformOrigin: "bottom center",
+    duration: 1.2,
+    ease: "power3.out"
+}, "orange1");
+
+tl2.from("#sprite",{
+     y: -80,
+    rotation: -75,
+    transformOrigin: "bottom center",
+    duration: 1.2,
+    ease: "power3.out"
+}, "orange1");
+

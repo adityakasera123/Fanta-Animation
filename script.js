@@ -4,7 +4,7 @@ let tl=gsap.timeline({scrollTrigger:{
     trigger:".two",
     start:"5% 95%",
     end:"67% 60%",
-    scrub:1,
+    scrub:true,
    
 }})
 
@@ -41,7 +41,7 @@ let tl2=gsap.timeline({scrollTrigger:{
     trigger:".three",
     start:"0% 85%",
     end:"70% 50%",
-    scrub:.6,
+    scrub:true
    
 }})
 
